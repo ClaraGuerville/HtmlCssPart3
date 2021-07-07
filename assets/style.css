@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'grahm_sans_roughregular';
+    src: url('../assets/font/rough_otf-webfont.woff2') format('woff2'),
+        url('../assets/font/rough_otf-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'folksregular';
+    src: url('../assets/font/folks-normal-webfont.woff') format('woff'),
+        url('../assets/font/folks-normal-webfont.woff2') format('woff2');
+
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Image de fond */
+body {
+    background-image: url(../assets/img/background.jpg);
+    font-family: 'folksregular';
+}
+
+/*Image de fond header*/
+.header {
+    background-image: url(../assets/img/header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    /*Position du texte*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Police d'écriture*/
+
+/* Voyage & co */
+h1 {
+    font-family: 'grahm_sans_roughregular';
+    font-size: 75pt;
+}
+/* Destination */
+h2 {
+    font-family: 'grahm_sans_roughregular';
+    font-size: 30pt;
+    width: 100%;
+    background-color: #e6dbd1;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+     /* retirer le gras d'un titre */
+    font-weight: normal;
+}
+/* Hawai Alaska Mongolie */
+h3 {
+    font-family: 'grahm_sans_roughregular';
+    font-size: 25pt;
+    margin-top: 20pt;
+    margin-left: 4%;
+ /* retirer le gras d'un titre */
+    font-weight: normal;
+}
+
+/* Menu de navigation */
+nav ul {
+    display: flex;
+    margin-top: 0pt;
+    justify-content: space-around;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #e6dbd1;
+    height: 6vw;
+    align-items: center;
+    font-family: 'grahm_sans_roughregular';
+    font-size: 30pt;
+}
+/* Ici on retire le menu burger de la page de navigation pc */
+li:last-child {
+    display: none;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0pt;
+    color: black;
+}
+
+/* Survol du menu */
+nav li a:hover {
+    background-color: #DDCFC3;
+}
+/* Barre de recherche */
+.searchbar {
+    height: 5vh;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 4px;
+    margin-bottom: 3vh;
+}
+
+.button {
+    height: 5vh;
+    width: 5vh;
+    padding: 3px;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    background-image: url(../assets/img/loupe.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+/* Texte de présentation */
+section.presentation {
+    max-width: 75vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+p.paragraphepresentation {
+    background-color: rgba(161, 219, 255, 0.53);
+    border-radius: 10px;
+    font-size: 23px;
+    padding: 27px;
+    text-align: center;
+    color: black;
+}
+/* Les blocs */
+section#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e6dbd1;
+}
+/* Les éléments à l'intérieur du container */
+p#destination {
+    font-size : 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.box {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    margin-top: 30px;
+    background-color: rgba(241, 236, 232, 0.801);
+    padding: 1%;
+}
+/* Le coin arrondi des images */
+img {
+border-radius: 3px;
+}
+/* La mise en page des textes */
+.pbloc {
+    font-size: 21px;
+    text-align: justify;
+    padding: 5px;
+}
